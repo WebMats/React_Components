@@ -1,0 +1,26 @@
+.Navbar {
+	background: #f6f6f6;
+	display: flex;
+	flex-flow: column wrap;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	line-height: 4;
+}
+
+.ButtonWrap {
+	height: 40px;
+	width: 120px;
+	position: absolute;
+	top: -5px;
+	right: 10px;
+	float: right;
+}
+
+
+@media (max-width:768px) {
+	.ButtonWrap {
+		display: none;
+	}
+}
+

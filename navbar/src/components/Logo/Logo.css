@@ -1,0 +1,19 @@
+.Logo {
+	width:100%;
+	max-width: 200px;
+	min-width: 0px;
+	height: auto;
+	padding: 1em;
+	display:block;
+	text-align: center;
+}
+
+.LogoWrap {
+	height: 100%;
+}
+
+@media (max-width: 768px) {
+.LogoWrap {
+	width: 200px;
+}
+}

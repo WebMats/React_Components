@@ -1,0 +1,20 @@
+.NavItems {
+	display: flex;
+	padding-left: 0;
+	margin-right: 50px;
+}
+
+@media (max-width: 838px) {
+	.NavItems * {
+		font-size: 14px;
+		line-height: 60px;
+		margin-right: 0px !important;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.NavItems {
+		display: none;
+	}
+}

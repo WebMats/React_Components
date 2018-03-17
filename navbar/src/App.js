@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 
+import Layout from './hoc/Layout/Layout';
 import LandingPage from './containers/LandingPage/LandingPage';
 
 
@@ -11,9 +12,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      	<Switch>
-      	<Route exact path="/" componet={LandingPage} />
-      	</Switch>
+      <Layout>
+      		<Switch>
+      			<Route exact path="/" component={LandingPage} />
+            <Redirect to="/" />
+      		</Switch>
+      	</Layout>
       </div>
     );
   }

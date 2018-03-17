@@ -1,0 +1,17 @@
+.NavItem {
+	padding: 0 18px;
+	font-size: 14px;
+	height: 100%;
+}
+.NavItem * {
+	color: #565656;
+}
+.NavItem *:hover {
+	color: #000;
+}
+
+@media (max-width: 838px) {
+	.NavItem {
+		padding: 0 10px;
+	}
+}

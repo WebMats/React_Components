@@ -1,0 +1,43 @@
+.Toggler {
+	 height: 100%;
+	border: 2px solid black;
+	width: 40px;
+	position: absolute;
+	top:10px;
+	height: 40px;
+	right: 10px;
+	transform: rotate(45deg);
+}
+
+.TogBarFirst {
+	background: #000;
+	width: 30px;
+	position: relative;
+	top: 8px;	
+	right: 5px;
+	padding: 1px;
+	margin: 4px auto;
+	transform: rotate(-45deg);
+}
+
+.TogBarMid {
+	background: #000;
+	width: 20px;
+	padding: 1px;
+	position: relative;
+	top: 7.3px;
+	right: 1.4px;
+	margin: 4px auto;
+	transform: rotate(-45deg);
+}
+
+.TogBarLast {
+	background: #000;
+	width: 30px;
+	padding: 1px;
+	position: relative;
+	top: 6px;
+	right: -4px;
+	margin: 4px auto;
+	transform: rotate(-45deg);
+}
