@@ -3,13 +3,24 @@ import React from 'react';
 import Css from './DrawerToggler.css';
 
 
-const drawerToggler = (props) => (
-	<div className ={Css.Toggler} onClick={props.clicked}>
-		<div className={Css.TogBarFirst}></div>
-		<div className={Css.TogBarMid}></div>
-		<div className={Css.TogBarLast}></div>
-	</div>
+const drawerToggler = (props) => {
 
+
+	let classes = [];
+
+		if (props.toggled) {
+			classes = [Css.Icon, Css.Active].join(' ')
+		}
+		if (!props.toggled) {
+			classes = [Css.Icon]
+		}
+
+	return (
+	<div className ={classes} onClick={props.clicked}>
+		<div className={Css.Toggler}></div>
+	</div>
 	);
+
+	};
 
 export default drawerToggler ;

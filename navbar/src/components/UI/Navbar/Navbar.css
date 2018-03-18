@@ -18,8 +18,11 @@
 }
 
 
-@media (max-width:768px) {
-	.ButtonWrap {
+@media (max-width:770px) {
+	.ButtonWrap{
+		display: none;
+	}
+	.DesktopNavItems {
 		display: none;
 	}
 }

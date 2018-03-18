@@ -13,7 +13,9 @@ class Layout extends Component {
 	}
 
 
-toggleMenuHandler = () => {console.log('We In It Bruh!')}
+toggleMenuHandler = (event) => {
+	this.setState({toggleNavMenu:!this.state.toggleNavMenu})
+}
 
 	render() {
 		return (
@@ -21,6 +23,7 @@ toggleMenuHandler = () => {console.log('We In It Bruh!')}
 				<Navbar />
 				<div className={Css.MobileNav}>
 					<SideDrawer 
+					toggled = {this.state.toggleNavMenu}
 					togglerClick={this.toggleMenuHandler} />
 				</div>
 				<main className={Css.Content}>

@@ -10,7 +10,9 @@ import Css from './Navbar.css';
 const navbar = (props) => (
 	<nav className={Css.Navbar}>
 		<Logo />
-		<NavItems />
+		<div className={Css.DesktopNavItems} >
+			<NavItems  />
+		</div>
 		<div className={Css.ButtonWrap}>	
 			<Button>GET STARTED</Button>
 		</div>

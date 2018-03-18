@@ -13,8 +13,16 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
 	.NavItems {
-		display: none;
+		display: block;
+		margin: 0;
+	}
+	.NavItems a {
+		color:#ccc;
+		font-size: calc(9px + 2vw);
+	}
+	.NavItems a:hover  {
+		color:white;
 	}
 }
