@@ -9,3 +9,8 @@
 	background: rgb(83, 166, 166);
 	color: white;
 }
+
+.Button:hover {
+	background: rgb(91, 186, 186);
+	cursor: pointer;
+}

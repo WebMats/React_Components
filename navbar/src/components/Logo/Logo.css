@@ -1,3 +1,7 @@
+.LogoMobile {
+	display: none;
+}
+
 .Logo {
 	width:100%;
 	max-width: 200px;
@@ -16,4 +20,18 @@
 .LogoWrap {
 	width: 200px;
 }
+}
+
+@media (max-width: 568px) {
+	.Logo {
+		display: none;
+	}
+	.LogoMobile {
+		display: block;
+		max-width: 200px;
+		height: 70px;
+		padding: 1em;
+		display:inline;
+		margin-top: -5px;
+	}
 }
