@@ -4,6 +4,7 @@ import Aux from '../../hoc/Aux/Aux';
 import AboutUs from '../../components/LandingPage/AboutUs/AboutUs';
 import Header from '../../components/LandingPage/Header/Header';
 import IpadSection from '../../components/LandingPage/IpadSection/IpadSection';
+import InstaSec from '../../components/LandingPage/InstaSec/InstaSec';
 import SlideOne from '../../components/LandingPage/SlidesOne/SlidesOne';
 import SlideTwo from '../../components/LandingPage/SlidesTwo/SlidesTwo';
 
@@ -91,6 +92,7 @@ componentWillUnmount = () => {
 				width = {this.state.width}
 				/>
 				<AboutUs />
+				<InstaSec />
 			</Aux>
 			)
 	}

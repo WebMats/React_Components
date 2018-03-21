@@ -112,6 +112,11 @@
 	}
 }
 
+@media (max-width: 380px) {
+	.TextBox {
+		height: calc(310px - 5vw);
+	}
+}
 
 
 
