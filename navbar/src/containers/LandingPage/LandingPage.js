@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 
 import Aux from '../../hoc/Aux/Aux';
 import Header from '../../components/LandingPage/Header/Header';
+import IpadSection from '../../components/LandingPage/IpadSection/IpadSection';
 import SlideOne from '../../components/LandingPage/SlidesOne/SlidesOne';
 
 
 class LandingPage extends Component {
 	state = {
-		width: window.innerWidth / 1000,
+		width: window.innerWidth > 1000 ? null : window.innerWidth / 1000,
 		height: 1,
 		SlideTo: 0
 	}
@@ -75,7 +76,9 @@ componentWillUnmount = () => {
 				SliderStatus={this.state.SlideTo}
 				width = {this.state.width}
 				/>
-			</Aux>)
+				<IpadSection />
+			</Aux>
+			)
 	}
 }
 

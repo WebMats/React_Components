@@ -1,0 +1,86 @@
+
+.Section {
+	background-image: url('../../../assets/images/ipad-demo.jpg');
+	background-size: cover;
+	background-position: 50% center;
+	height: 695px;
+	position: relative;
+	margin-top: 25px;
+}
+
+.TextWrapper {
+	height: 400px;
+	width: 280px;
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+	line-height: 1.5;
+	align-items: center;
+	text-align: center;
+	top: 35%;
+	right: calc(30vw - 200px);
+}
+.TextWrapper h2, p {
+	padding: 5px 0;
+	color: white;
+}
+.TextWrapper h2 {
+	font-weight: 900;
+}
+.TextWrapper p {
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+.Button {
+	height: 45px;
+	width: 230px;
+	border: none;
+}
+.Button button {
+	border: none;
+}
+
+@media (max-width: 770px) and (min-width: 569px) {
+	.Section {
+		background-image: url('../../../assets/images/ipad-demo-mobile.gif');
+	}
+	.TextWrapper {
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: auto;
+		background: white;
+		border-top: 1px solid #ccc;
+		padding: 20px 20px;
+	}
+	.TextWrapper h2, p {
+	color: black;
+}
+}
+
+@media (max-width: 568px) {
+	.Section {
+		background-image: url('../../../assets/images/ipad-demo-mobile.gif');
+		height: 750px;
+	}
+	.TextWrapper {
+		top: 50px;
+		right: calc(80vw - 200px);
+		width: 250px;
+		background: transparent;
+	}
+	.TextWrapper h2 {
+	color: white;
+	font-size: 17px;
+}
+	.TextWrapper p {
+	color: white;
+	font-size: 17px;
+}
+}
+
+
+
+
+
+
