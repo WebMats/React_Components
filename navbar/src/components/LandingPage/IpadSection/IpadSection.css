@@ -20,7 +20,7 @@
 	top: 35%;
 	right: calc(30vw - 200px);
 }
-.TextWrapper h2, p {
+.TextWrapper h2 {
 	padding: 5px 0;
 	color: white;
 }
@@ -29,6 +29,7 @@
 }
 .TextWrapper p {
 	font-size: 17px;
+	color: white;
 	margin-bottom: 5px;
 }
 .Button {
@@ -43,6 +44,8 @@
 @media (max-width: 770px) and (min-width: 569px) {
 	.Section {
 		background-image: url('../../../assets/images/ipad-demo-mobile.gif');
+		background-position: left bottom !important;
+		height: 825px;
 	}
 	.TextWrapper {
 		top: 0;
@@ -53,10 +56,32 @@
 		border-top: 1px solid #ccc;
 		padding: 20px 20px;
 	}
-	.TextWrapper h2, p {
+	.TextWrapper h2, .TextWrapper p {
 	color: black;
 }
 }
+
+.TextWrapperTwo {
+	text-align: center;
+	margin-top: 20px;
+}
+.TextWrapperTwo p {
+	padding: 10px;
+	font-size: 20px;
+}
+.TextWrapperTwo h2 {
+	font-weight: 900;
+}
+.TextWrapperTwo > a h3 {
+	color: rgb(83, 166, 166);
+	font-weight: bolder;
+	padding: 10px 0;
+}
+.TextWrapperTwo > a h3:hover {
+	color: rgb(91, 186, 186);
+	cursor: pointer;
+}
+
 
 @media (max-width: 568px) {
 	.Section {

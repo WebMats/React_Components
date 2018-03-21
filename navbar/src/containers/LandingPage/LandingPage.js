@@ -4,18 +4,17 @@ import Aux from '../../hoc/Aux/Aux';
 import Header from '../../components/LandingPage/Header/Header';
 import IpadSection from '../../components/LandingPage/IpadSection/IpadSection';
 import SlideOne from '../../components/LandingPage/SlidesOne/SlidesOne';
+import SlideTwo from '../../components/LandingPage/SlidesTwo/SlidesTwo';
 
 
 class LandingPage extends Component {
 	state = {
 		width: window.innerWidth > 1000 ? null : window.innerWidth / 1000,
 		height: 1,
-		SlideTo: 0
+		SlideTo: 1,
+		SlideToTwo: 1
 	}
 
-HandlePrevNext = (n) => {
-	this.setState({PrevNext:n})
-}
 
 HandleSlider = (n) => {
 	this.setState({SlideTo:n})
@@ -56,7 +55,15 @@ HandlePrevNext = (n) => {
 		this.setState({SlideTo: this.state.SlideTo + n})
 	}
 }
-
+HandlePrevNextTwo = (n) => {
+	if (this.state.SlideToTwo === 1 && n === -1) {
+		this.setState({SlideToTwo:4})
+	} else if (this.state.SlideToTwo === 4 && n === 1) {
+		this.setState({SlideToTwo:1})
+	} else {
+		this.setState({SlideToTwo: this.state.SlideToTwo + n})
+	}
+}
 
 componentWillUnmount = () => {
 	window.removeEventListener('resize', this.updateDimensions);
@@ -68,7 +75,6 @@ componentWillUnmount = () => {
 				<Header width={this.state.width} />
 				<SlideOne 
 				clickedPrev={() => this.HandlePrevNext(-1)}
-				PrevNextStatus={this.state.PrevNext}  
 				clickedNext={() => this.HandlePrevNext(1)}
 				SliderOne={() => this.HandleSlider(1)}
 				SliderTwo={() => this.HandleSlider(2)}
@@ -77,6 +83,12 @@ componentWillUnmount = () => {
 				width = {this.state.width}
 				/>
 				<IpadSection />
+				<SlideTwo
+				clickedPrev={() => this.HandlePrevNextTwo(-1)}
+				SliderStatus={this.state.SlideToTwo}
+				clickedNext={() => this.HandlePrevNextTwo(1)}
+				width = {this.state.width}
+				/>
 			</Aux>
 			)
 	}

@@ -1,24 +1,20 @@
 .SlideContainer {
 	max-width:90vw;
-	max-height: 38vw;
+	height: 600px;
 	position: relative;
 	margin: auto;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
 .SlideContainer div > img {
 	width: 100%;
+	position: 50%;
 }
 
 .MySlides {
 	display: none;
 }
-.HCWH {
-	margin: 50px 0 20px;
-	font-size: 30px;
-	font-weight: 800;
-	text-align: center;
-}
+
 
 .Prev, .Next {
 	cursor: pointer;
@@ -52,35 +48,52 @@
 	color: #f2f2f2;
 	background: rgba(255,255,255, .8);
 	font-size: 15px;
-	padding: 8px 12px;
+	padding: 130px 12px 0 12px;
 	position: absolute;
-	bottom: 0px;
-	width: 100%;
+	bottom: 1%;
+	right: 75px;
+	width: 280px;
+	height: 97%;
 	text-align: center;
 	font-size: 4vw;
 }
 .TextBox > h3 {
-	font-size: calc(3px + .6em);
+	font-size: 20px;
+	font-weight: 900;
 }
 .TextBox > p {
-	font-size: calc(3px + .4em);
+	font-size: 18px;
 	padding: 10px 0;
 }
-
-.Dot {
-	cursor: pointer;
-	height: 10px;
-	width: 10px;
-	margin: 0 8px;
-	background-color: #d6d6d6;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+.SmallImgOne {
+	width: 95%;
+	height: 200px;
+	background-image: url('../../../assets/images/subimg1-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.SmallImgTwo {
+	width: 95%;
+	height: 200px;
+	background-image: url('../../../assets/images/subimg2-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.SmallImgThree {
+	width: 95%;
+	height: 200px;
+	background-image: url('../../../assets/images/subimg3-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.SmallImgFour {
+	width: 95%;
+	height: 200px;
+	background-image: url('../../../assets/images/subimg4-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.Active, .Dot:hover {
-	background-color: rgb(83, 166, 166);
-}
 
 .Fade {
 	-webkit-animation-name: fade;
@@ -104,21 +117,25 @@
 	to {opacity: 1;}
 }
 
-@media (max-width: 567px) {
-	.Dot {
+@media (max-width: 1114px) {
+	.SlideContainer div > img {
+		height: 100%;
+		max-height: 600px; 
+		width: auto;
+	}
+}
+
+@media (max-width: 880px) {
+	.SlideContainer {
+		max-height: 800px; 
+	}
+}
+
+@media (max-width: 575px) {
+	.TextBox {
 		display: none;
 	}
 }
-@media (max-width: 480px) {
-	.HCWH {
-		margin-top: 80px;
-	}
-	.SlideContainer {
-		max-height: 220px; 
-	}
-}
-
-
 
 
 
