@@ -14,7 +14,7 @@ const sideDrawer = (props) => {
 
 	let classes = null;
 						//TOGGLE SIDEDRAWER BASED ON IF TOGGLER OR BACKDROP WAS PRESSED
-	props.toggled ? classes = Css.SideDrawer : classes = [Css.SideDrawer, Css.Close].join(" ")
+	props.toggled ? classes = Css.SideDrawer : classes = `${Css.SideDrawer} ${Css.Close}`
 
 	let sidedrawer = (
 						 <nav className = {classes}>

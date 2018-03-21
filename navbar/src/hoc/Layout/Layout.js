@@ -26,7 +26,7 @@ toggleMenuHandler = (event) => {
 					toggled = {this.state.toggleNavMenu}
 					togglerClick={this.toggleMenuHandler} />
 				</div>
-				<main className={Css.Content}>
+				<main  className={Css.Content}>
 					{this.props.children}
 				</main>
 			</Aux>

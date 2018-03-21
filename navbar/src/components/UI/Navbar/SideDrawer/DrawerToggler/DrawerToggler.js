@@ -9,7 +9,7 @@ const drawerToggler = (props) => {
 	let classes = [];
 
 		if (props.toggled) {
-			classes = [Css.Icon, Css.Active].join(' ')
+			classes = `${Css.Icon} ${Css.Active}`
 		}
 		if (!props.toggled) {
 			classes = [Css.Icon]

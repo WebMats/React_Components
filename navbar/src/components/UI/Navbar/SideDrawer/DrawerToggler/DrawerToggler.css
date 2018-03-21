@@ -1,7 +1,7 @@
 .Icon {
 	border: 2px solid black;
 	width: 40px;
-	position: absolute;
+	position: fixed;
 	top:10px;
 	height: 40px;
 	right: 10px;
