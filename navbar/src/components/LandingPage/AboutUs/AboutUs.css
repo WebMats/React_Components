@@ -1,0 +1,117 @@
+.Wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.TextBox {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	margin: 120px 50px 0 100px;
+	flex-flow: column;
+	text-align: center;
+	align-items: center;
+}
+
+.Img {
+	background-image: url('../../../assets/images/designer.jpg');
+	height: 490px;
+	width: 490px;
+	background-size: cover;
+	margin-left: 50px;
+}
+
+.Button{ 
+	height: 50px;
+	width: 240px;
+	margin-top: 20px;
+ }
+
+ .TextBox h1 {
+
+ }
+.TextBox p {
+	line-height: 2;
+	font-size: 20;
+}
+.Line {
+	background: black;
+	height:3px;
+	width:60px;
+	margin: 15px 0;
+	padding-bottom:3px;
+}
+
+
+.WrapAboutUs {
+	height: 465px;
+	position: relative;
+	background-color: #e1f4f4;
+	padding: 100px 100px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 50px;
+}
+.WrapAboutUs:before {
+	border: 1px solid #ccc;
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+.WrapAboutUs h2 {
+	font-weight: 900;
+}
+
+.WrapAboutUs h4 {
+	font-size: 23px;
+	line-height: 2;
+	width: 700px;
+}
+
+
+
+@media (max-width:1093px) {
+	.Img {
+		height:50vw;
+		width:50vw;
+	}
+	.TextBox {
+		margin: 120px 0px 0 10px;
+	}
+}
+
+@media (max-width: 770px) {
+	.Wrapper {
+		flex-flow: column;
+		margin:0;
+	}
+	.Img {
+		width: 100vw;
+		height:450px;
+		padding:0;
+		margin:0;
+		background-repeat: no-repeat;
+	}
+	.TextBox {
+		margin:0;
+		padding: 0;
+		width: 70%;
+		height: calc(250px - 5vw);
+	}
+	.WrapAboutUs h4 {
+		width: 80vw;
+		height: 100%;
+		font-size: calc(9px + 2vw);
+	}
+}
+
+
+
+

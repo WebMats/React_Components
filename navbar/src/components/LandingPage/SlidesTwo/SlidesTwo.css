@@ -135,6 +135,9 @@
 	.TextBox {
 		display: none;
 	}
+	.SlideContainer {
+		height: 400px;
+	}
 }
 
 

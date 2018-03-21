@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import Aux from '../../hoc/Aux/Aux';
+import AboutUs from '../../components/LandingPage/AboutUs/AboutUs';
 import Header from '../../components/LandingPage/Header/Header';
 import IpadSection from '../../components/LandingPage/IpadSection/IpadSection';
 import SlideOne from '../../components/LandingPage/SlidesOne/SlidesOne';
@@ -89,6 +90,7 @@ componentWillUnmount = () => {
 				clickedNext={() => this.HandlePrevNextTwo(1)}
 				width = {this.state.width}
 				/>
+				<AboutUs />
 			</Aux>
 			)
 	}
