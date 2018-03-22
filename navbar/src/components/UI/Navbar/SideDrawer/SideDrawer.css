@@ -14,8 +14,11 @@
 	transform: translateX(0%);
 	transition: transform 0.3s ease-out;
 	font-size: 18px;
+	overflow: scroll;
 }
-
+.SideDrawer::-webkit-scrollbar { 
+    display: none; 
+}
 
 .Line {
 	background: white;
@@ -30,6 +33,13 @@
 	.SideDrawer {
 		display: none;
 	}
+}
+@media (max-width:770px) {
+	.Button {
+		position: relative;
+		bottom:40px;
+	}
+	
 }
 
 .Close {

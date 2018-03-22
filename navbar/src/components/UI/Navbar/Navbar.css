@@ -5,17 +5,18 @@
 	height: 60px;
 	position: fixed;
 	width: 100%;
-	line-height: 4;
+	line-height: 3;
 	z-index: 40;
 	border-bottom: 1px solid #ccc;
 	opacity: .97;
 }
 
+
 .ButtonWrap {
 	height: 40px;
 	width: 120px;
 	position: absolute;
-	top: -5px;
+	top: 3px;
 	right: 10px;
 	float: right;
 }

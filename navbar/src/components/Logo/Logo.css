@@ -10,6 +10,10 @@
 	padding: 1em;
 	display:block;
 	text-align: center;
+	position: fixed;
+	left: -6px;
+	top: -5px;
+	transform: scale(.9);
 }
 
 .LogoWrap {

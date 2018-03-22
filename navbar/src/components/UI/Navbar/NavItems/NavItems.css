@@ -1,15 +1,58 @@
 .NavItems {
 	display: flex;
 	padding-left: 0;
-	margin-right: 50px;
+	margin-right: 10px;
+	right: 10px;
+	top:6px;
+	height:55px;
 }
 
-@media (max-width: 838px) {
-	.NavItems * {
-		font-size: 14px;
-		line-height: 60px;
-		margin-right: 0px !important;
-	}
+.ListOne, .ListTwo {
+	background-color: white;
+	opacity: 1;
+	padding: 20px 30px;
+	border-radius: 2px;
+	border: 1px solid #C0C0C0;
+	margin-top: 4px;
+	line-height: 2;
+	display: none;
+	position: absolute;
+}
+
+.ListOne {
+	justify-content: space-between;
+	width: 320px;
+}
+.ListOne:before, .ListTwo:before{
+	background-color: white;
+	content: "";
+	height:10px;
+	position: absolute;
+	width:10px;
+	top: -5px;
+	border-left: 1px solid #C0C0C0;
+	border-top: 1px solid #C0C0C0;
+	transform: rotate(45deg);
+ }
+
+.ListOne:before {
+	left:30%;
+}
+.ListTwo:before {
+	left:45%;
+}
+
+
+.Dropdown li:hover ul {
+	display: flex
+}
+.ListTwo {
+	flex-flow: column;
+	width: 150px;
+	line-height: 1.8;
+}
+.Dropdown {
+		position: relative;
 }
 
 
@@ -17,6 +60,7 @@
 	.NavItems {
 		display: block;
 		margin: 0;
+		left: 0;
 	}
 	.NavItems a {
 		color:#ccc;
@@ -25,4 +69,69 @@
 	.NavItems a:hover  {
 		color:white;
 	}
+	
+.NavItems {
+	flex-flow: column;
+	position: relative;
+	top:80px;
 }
+
+.ListOne, .ListTwo {
+	background-color: black;
+	opacity: 1;
+	padding: 0;
+	border-radius: 2px;
+	border: 1px solid black;
+	margin-top: 4px;
+	line-height: 2;
+	display: none;
+	position: unset;
+}
+.ListOne *, .ListTwo * {
+	color: #ccc;
+	font-size: 15px;
+}
+.ListOne *:hover, .ListTwo *:hover {
+	color: white;
+}
+
+.ListOne {
+	justify-content: space-between;
+	width:100%;
+	flex-flow: column;
+}
+.ListOne:before, .ListTwo:before{
+	background-color: black;
+	position: unset;
+	border-left: 1px solid rgba(0,0,0,.3);
+	border-top: 1px solid rgba(0,0,0,.3);
+ }
+
+.ListOne:before {
+	left:0;
+}
+.ListTwo:before {
+	left:0;
+}
+
+.Dropdown li:hover ul {
+	display: flex
+}
+.ListTwo {
+	flex-flow: column;
+	width: 150px;
+	line-height: 1.8;
+}
+.Dropdown {
+		position: unset;
+		margin-bottom: 22px;
+}
+
+
+}
+
+
+
+
+
+
