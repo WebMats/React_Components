@@ -1,0 +1,182 @@
+.FooterWrapper {
+	background-color: #dcf4f4;
+	width: 100%;
+	height: 350px;
+	display: grid;
+	grid-template-columns: 10% [first] 1fr [line2] 1.4fr [line3] 1fr [end] 10%; 
+	grid-template-rows: [logostart] 30% [middleo] 1fr [logoend];
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+
+.LogoWrapper {
+	grid-column-start: 2;
+	grid-column-end: end;
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+	align-self: center;
+}
+.FollowUs {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	padding-top: 40px;
+	border-right: 1px solid black;
+}
+
+.FollowUs > div img:nth-child(1) {
+	transform: scale(.5);
+	position: absolute;
+	left:0px;
+}
+.FollowUs > div img:nth-child(2) {
+	transform: scale(.5);
+	position: absolute;
+	left: 50px;
+}
+.FollowUs > div img:nth-child(3) {
+	transform: scale(.5);
+	position: absolute;
+	left:100.5px;
+}
+.FollowUs > div img:nth-child(4) {
+	transform: scale(.62);
+	position: absolute;
+	left: 161.9px;
+}
+
+.Social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 30px;
+	width: 90%;
+}
+
+.LetterWrapper {
+	display: flex;
+	flex-flow: column;
+	padding-left: 50px;
+	justify-content: center;
+	border-right: 1px solid black;
+}
+
+.ChatWrapper {
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding-left: 20px;
+}
+
+.LogoWrapper img {
+	height: 25px;
+}
+.LogoWrapper img:nth-child(1), .LogoWrapper img:nth-child(4) {
+	height: 20px;
+}
+.LogoWrapper img:nth-child(5) {
+	height: 30px;
+}
+
+.LetterWrapper input {
+	height: 50px;
+	width:80%;
+	font-size: 15px;
+	padding-left: 10px;
+	margin: 6px 0;
+	border-radius: 3px;
+}
+.Search {
+	display:flex;
+}
+.Button {
+	width:40px;
+	height: 49px;
+	position: relative;
+	top:6px;
+}
+.Button button {
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.PhoneWrap > img {
+	transform: scale(.6);
+/*	position: relative;	
+	left: 40px;
+	top:40px;*/
+}
+.PhoneWrap p {
+	margin-left: 60px;
+	position: relative;
+	bottom: 80px;
+}
+
+.ChatWrapper > h2 {
+	padding-top:20px;
+}
+
+
+@media (max-width:1024px) {
+	.FooterWrapper {
+		height: 560px;
+		grid-template-columns:  1fr; 
+		grid-template-rows: [start] 1fr [logo] 1fr [follow] 120px [letter] 1fr [chat] ;
+	}
+	.LogoWrapper {
+		grid-column-start: 1;
+		display: flex;
+		width: 100%;
+	}
+	.FollowUs {
+		grid-column-start: 1;
+		grid-row-start:3;
+		padding-top: 40px;
+		border-right:0px;
+		border-bottom: 1px solid black;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		padding-top:10px;
+	}
+	.Social {
+		right:120px;
+		width:auto;
+	}
+	.LetterWrapper {
+		grid-column-start: 1;
+		grid-row-start: 2 ;
+		border-right:0px;
+		border-bottom: 1px solid black;
+		padding-bottom:30px;
+	}
+	.ChatWrapper {
+		grid-column-start: 1;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}	
+}
+
+@media (max-width:770px) {
+		.FooterWrapper {
+		height: 860px;
+		grid-template-rows: [start] 300px [logo] 1fr [follow] 1fr [letter] 1fr [chat] ; 
+	}
+	.LogoWrapper {
+		flex-flow: column;
+		width:auto;
+		align-items: center;
+	}
+	.LogoWrapper img {
+	height: 25px;
+	margin: 10px 0;
+	}
+}
+
+
+
+

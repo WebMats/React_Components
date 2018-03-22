@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Aux from '../../hoc/Aux/Aux';
 import AboutUs from '../../components/LandingPage/AboutUs/AboutUs';
+import Footer from '../../components/LandingPage/Footer/Footer';
 import Header from '../../components/LandingPage/Header/Header';
 import IpadSection from '../../components/LandingPage/IpadSection/IpadSection';
 import InstaSec from '../../components/LandingPage/InstaSec/InstaSec';
@@ -93,6 +94,7 @@ componentWillUnmount = () => {
 				/>
 				<AboutUs />
 				<InstaSec />
+				<Footer />
 			</Aux>
 			)
 	}
