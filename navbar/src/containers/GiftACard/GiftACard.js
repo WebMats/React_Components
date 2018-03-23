@@ -13,7 +13,7 @@ class GiftACard extends Component {
 
 		return (
 				<Aux className={Css.Wrapper}>
-					<img/>
+					<img alt=""/>
 				</Aux>
 			);
 	}
