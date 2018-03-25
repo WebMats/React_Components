@@ -44,7 +44,7 @@
 
 
 .Dropdown li:hover ul {
-	display: flex
+	display: flex;
 }
 .ListTwo {
 	flex-flow: column;
@@ -76,57 +76,14 @@
 	top:80px;
 }
 
-.ListOne, .ListTwo {
-	background-color: black;
-	opacity: 1;
-	padding: 0;
-	border-radius: 2px;
-	border: 1px solid black;
-	margin-top: 4px;
-	line-height: 2;
-	display: none;
-	position: unset;
-}
-.ListOne *, .ListTwo * {
-	color: #ccc;
-	font-size: 15px;
-}
-.ListOne *:hover, .ListTwo *:hover {
-	color: white;
-}
 
-.ListOne {
-	justify-content: space-between;
-	width:100%;
-	flex-flow: column;
-}
-.ListOne:before, .ListTwo:before{
-	background-color: black;
-	position: unset;
-	border-left: 1px solid rgba(0,0,0,.3);
-	border-top: 1px solid rgba(0,0,0,.3);
- }
-
-.ListOne:before {
-	left:0;
-}
-.ListTwo:before {
-	left:0;
-}
-
-.Dropdown li:hover ul {
-	display: flex
-}
-.ListTwo {
-	flex-flow: column;
-	width: 150px;
-	line-height: 1.8;
-}
 .Dropdown {
 		position: unset;
 		margin-bottom: 22px;
 }
-
+.Dropdown li:hover ul {
+	display: none;
+}
 
 }
 

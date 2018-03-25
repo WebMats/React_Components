@@ -39,7 +39,7 @@ const NavItems = (props) => {
 			<NavItem 
 			dropdown={dropdownOne} 
 			link="/how-it-works">
-				{`HOW IT WORKS ${String.fromCharCode(9663)}`}
+				{ !props.hidearrow ? `HOW IT WORKS ${String.fromCharCode(9663)}` : `HOW IT WORKS ` }
 			</NavItem>
 		</div>
 		<NavItem link="/shop">SHOP</NavItem>
@@ -48,7 +48,7 @@ const NavItems = (props) => {
 			<NavItem 
 			dropdown={dropdownTwo}
 			link="/magazine">
-				{`MAGAZINE ${String.fromCharCode(9663)}`}
+				{ !props.hidearrow ? `MAGAZINE ${String.fromCharCode(9663)}` : `MAGAZINE `}
 			</NavItem>
 		</div>
 		<NavItem link="/login">LOGIN</NavItem>

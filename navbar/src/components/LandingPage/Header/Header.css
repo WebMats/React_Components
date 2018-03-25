@@ -26,13 +26,11 @@
 	height: 80px;
 }
 .Title {
-	font-weight: 900; 
 	font-size: 40px;
 }
 .Par {
 	margin: 10px 0;
 	font-size: 20px;
-	font-weight: 600;
 }
 
 .Awards {
@@ -77,7 +75,6 @@
 	min-width: 200px;
 }
 	.TitleMobile {
-	font-weight: 900; 
 	font-size: 25px;
 	text-align: center;
 }
@@ -85,9 +82,7 @@
 	margin: 10px 0;
 	text-align: center;
 	width: 70%;
-	font-weight: 300;
 	font-size: 15px;
-	font-weight: 600;
 }
 .ImgWrapper {
 		top:60px;

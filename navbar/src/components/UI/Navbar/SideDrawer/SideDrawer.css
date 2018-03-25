@@ -14,7 +14,7 @@
 	transform: translateX(0%);
 	transition: transform 0.3s ease-out;
 	font-size: 18px;
-	overflow: scroll;
+	overflow: show ;
 }
 .SideDrawer::-webkit-scrollbar { 
     display: none; 
@@ -29,7 +29,7 @@
 	width: 90%;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 771px) {
 	.SideDrawer {
 		display: none;
 	}

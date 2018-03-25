@@ -25,7 +25,6 @@
 	color: white;
 }
 .TextWrapper h2 {
-	font-weight: 900;
 }
 .TextWrapper p {
 	font-size: 17px;
@@ -70,11 +69,10 @@
 	font-size: 20px;
 }
 .TextWrapperTwo h2 {
-	font-weight: 900;
 }
 .TextWrapperTwo > a h3 {
 	color: rgb(83, 166, 166);
-	font-weight: bolder;
+	 : bolder;
 	padding: 10px 0;
 }
 .TextWrapperTwo > a h3:hover {

@@ -16,7 +16,6 @@
 }
 .WrapInstaText h3 {
 	color: rgb(83, 166, 166);
-	font-weight: 900;
 }
 .InstaIcon *, .InstaIcon:before, .InstaIcon:after {
 	font-family: FontAwesome;
@@ -49,7 +48,6 @@
 	margin: auto;
 	top:10px;
 	font-size: calc(15px + 1vw);
-	font-weight: 900;
 	text-align:center;
 }
 .WrapBtn div {

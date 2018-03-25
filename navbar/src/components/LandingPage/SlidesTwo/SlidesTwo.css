@@ -25,7 +25,6 @@
 	margin-top: -22px;
 	color: rgb(83, 166, 166);
 	background-color:rgba(255,255,255, .8); 
-	font-weight: bold;
 	font-size: 25px;
 	transition: 0.2s ease;
 	border-radius: 50%;
@@ -59,7 +58,6 @@
 }
 .TextBox > h3 {
 	font-size: 20px;
-	font-weight: 900;
 }
 .TextBox > p {
 	font-size: 18px;

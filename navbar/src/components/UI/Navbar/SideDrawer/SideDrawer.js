@@ -19,7 +19,7 @@ const sideDrawer = (props) => {
 	let sidedrawer = (
 						 <nav className = {classes}>
 							<hr className={Css.Line} />
-							<NavItems />
+							<NavItems hidearrow = {props.toggled} />
 							<div className={Css.Button} >
 								<Button>GET STARTED</Button>
 							</div>

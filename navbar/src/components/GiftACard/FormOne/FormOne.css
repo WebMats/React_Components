@@ -1,0 +1,78 @@
+.FullWrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+
+section > h1 {
+	font-size: 28px;
+	 : 900;
+	margin-bottom: 10px;
+}
+section:not(.SuggestionWrapper) > p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+
+form > h1 {
+	font-size: 130px;
+	 : 900;
+}
+
+
+.AmountWrapper {
+	position: relative;
+	bottom: 135px;
+	left: 55px;
+}
+.AmountInput {
+	display: flex;
+	margin: 10px 0px;
+}
+.AmountInput input {
+	border: .5px solid #ccc;
+	border-radius: 4px;
+	height: 40px;
+	width: 80px;
+	margin: 0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.SuggestionWrapper {
+	background-color: #FAFAFA;
+	padding: 20px;
+	height: 260px;
+	width: 475px;
+	position: relative;
+	bottom: 220px;
+	left: 250px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column;
+	-ms-align-items: baseline;
+	justify-content: space-between;
+}
+.SuggestionWrapper p { 
+	font-size: 19px;
+	
+}
+.SuggestionWrapper p {
+	 
+}
+
+
+
+
+
