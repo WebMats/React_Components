@@ -13,6 +13,9 @@ const asyncGiftCard = asyncComponent(() => {
   return import('./containers/GiftACard/GiftACard')
 });
 
+const asyncLogin = asyncComponent(() => {
+  return import ('./containers/Login/Login')
+})
 
 
 class App extends Component {
@@ -23,6 +26,7 @@ class App extends Component {
       		<Switch>
       			<Route exact path="/" component={LandingPage} />
             <Route exact path="/give-a-card" component={asyncGiftCard} />
+            <Route path="/login" component={asyncLogin} />
             <Redirect to="/" />
       		</Switch>
       	</Layout>

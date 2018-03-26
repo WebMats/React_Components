@@ -1,0 +1,151 @@
+.LoginFormWrapper {
+	position: relative;
+	top: 80px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+/*Style of facebook section*/
+.FacebookGreeting {
+	display: flex;
+	flex-flow: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+.FacebookGreeting >h2 {
+	margin-bottom: 15px;
+}
+.Button {
+	width: 400px;
+	height: 45px;
+	margin-bottom: 45px;
+}
+.Button button {
+	background-color: #3B5998;
+}
+.Button button:hover {
+	background-color: #5171b5;
+}
+.FacebookIcon *, .FacebookIcon:before, .FacebookIcon:after {
+	font-family: FontAwesome;
+	font-size: 20px;
+	margin-right: 4px;
+	color: white;
+}
+/*End of style for facebook section*/
+
+/*Style for OR bar*/
+.ORWrapper {
+	border: 1px solid #ccc;
+	height: 40px;
+	width: 40px;
+	position: relative;
+	background-color: white;
+	z-index: 1;
+	transform: rotate(45deg);
+}
+.ORWrapper > h5 {
+	transform: rotate(-45deg);
+	position: absolute;
+	top:17%;
+	left:17%;
+	padding: 3px;
+	color: #C0C0C0;
+}
+.LoginFormWrapper hr {
+	width:410px;
+	border: .3px solid #C0C0C0;
+	position: relative;
+	top:21px;
+}
+
+
+/*end of style for or bar*/
+
+
+/*Start of inputs styling*/
+.Inputs {
+	display: flex;
+	flex-flow: column;
+	-ms-align-items: center;
+	align-items: center;
+	width: 400px;
+	margin-top: 30px;
+}
+.Inputs input:nth-child(2), .Inputs input:nth-child(4) { 
+	width: 98%;
+	height: 50px;
+	padding: 0 10px;
+	font-size: 17px;
+	outline-color: rgb(91, 186, 186);
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.Inputs > label {
+	align-self: flex-start;
+	padding: 10px 0;
+}
+
+.Checkbox {
+	margin-right:280px;
+}
+.PasswordAssists {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.PasswordAssists > small {
+	color: rgb(83, 166, 166);
+}
+
+.BtnLogin {
+	width: 400px;
+	height: 45px;
+	margin-top: 15px;
+}
+
+/*end of inputs styling*/
+
+
+/*Create account text styling*/
+.CreateAccountWrapper {
+	margin-top: 30px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.CreateAccountWrapper hr {
+	padding:1px 0;
+	width: 40px;
+	position: relative;
+	margin-bottom: 20px;
+	top:0 ;
+}
+
+.CreateAccountWrapper p::after {
+	content: " Get Started!";
+	color:rgb(83, 166, 166);
+}
+
+/*End of create account styling*/
+
+
+
+@media (max-width: 568px) {
+.Button , .Inputs, .BtnLogin, .FacebookGreeting, .Checkbox, .LoginFormWrapper hr {
+	width: 85%;
+	margin-right:0;
+}
+
+
+}
+
+
+
+
