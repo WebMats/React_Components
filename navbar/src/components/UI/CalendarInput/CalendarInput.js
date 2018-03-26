@@ -22,7 +22,7 @@ const calendarInput = (props) => {
 				<DatePicker
 					animation="slide-up"
 					calendar = {calendar}
-					value={props.defaultValue}
+					value={props.value}
 					onChange={props.change}
 				>
 					{({value}) => {

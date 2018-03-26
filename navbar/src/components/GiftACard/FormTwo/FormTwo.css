@@ -2,6 +2,9 @@
 	width: 800px;
 	margin: 0 auto;
 }
+.FullWrapper h1 {
+	font-size: 128px;
+}
 
 .Inputs {
 	display: -webkit-flex;
@@ -43,3 +46,52 @@
 	top: 0;
 	left: 0;
 }
+
+@media (max-width: 840px) and (min-width:769px) {
+	.FullWrapper { 
+		width:98%;
+	}
+}
+
+@media (max-width: 840px) {
+	.FullWrapper { 
+		width:98%;
+	}
+	.FullWrapper form {
+		position: relative;
+	}
+	.Inputs input, .Inputs textarea {
+		width: calc(94vw - 100px);
+	}
+	.Button {
+		width: 100%;
+	}
+}
+
+@media (max-width: 568px) {
+	.FullWrapper h1 {
+		font-size: 28px;
+	}
+	.FullWrapper {
+		height: 500px;
+	}
+	.Inputs {
+	flex-flow: column;
+	position: relative;
+	bottom: 32px;
+	left: 30px;
+}
+	.Inputs input {
+		width: 90%;
+	}
+
+}
+
+@media (max-width: 340px) {
+	.Inputs input {
+		width: 85%
+	}
+}
+
+
+

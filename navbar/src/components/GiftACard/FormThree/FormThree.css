@@ -1,0 +1,115 @@
+.FullWrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+.FullWrapper h1 {
+	font-size: 128px;
+}
+
+.Inputs {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column;
+	position: relative;
+	bottom: 130px;
+	left: 100px;
+}
+
+.Inputs input {
+	border: .5px solid #ccc;
+	border-radius: 4px;
+	height: 40px;
+	width: 85%;
+	padding: 0px 10px;
+	font-size: 15px;
+	margin: 10px 10px 20px 5px;	
+}
+.Inputs textarea {
+	border: .5px solid #ccc;
+	border-radius: 4px;
+	width: 85%;
+	padding: 0px 10px;
+	font-size: 15px;
+	margin: 10px 10px 20px 5px;	
+	height: 80px;
+}
+
+.Inputs > h2 {
+	margin-bottom: 15px;
+}
+
+
+.Button {
+	height: 60px;
+	position: relative;
+	bottom: 120px;
+	left: 0px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+.Button button {
+	font-size: 18px;
+	width: 250px;
+}
+.Inputs label::after {
+	content: " *";
+	color: red;
+	font-size: 8px;
+	position: relative;
+	bottom:7px;
+}
+
+@media (max-width: 840px) {
+	.FullWrapper { 
+		width:98%;
+	}
+	.FullWrapper form {
+		position: relative;
+	}
+	.Inputs input, .Inputs textarea {
+		width: calc(94vw - 100px);
+	}
+	.Button {
+		width: 100%;
+	}
+
+}
+
+
+@media (max-width: 568px) {
+		.FullWrapper h1 {
+			font-size: 28px;
+		}	
+		.Inputs {
+		flex-flow: column;
+		position: relative;
+		bottom: 32px;
+		left: 30px;
+		height: 460px;
+	}
+	.Inputs input, .Inputs textarea {
+		width: 90%
+	}
+}
+
+@media (max-width: 340px) {
+	.Inputs input, .Inputs textarea {
+		width: 85%
+	}
+}
+
+
+
+
+
+
+
+

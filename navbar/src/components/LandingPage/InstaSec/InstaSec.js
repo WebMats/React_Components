@@ -1,5 +1,5 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome'
+import FontAwesome from 'react-fontawesome';
 
 import Aux from '../../../hoc/Aux/Aux';
 import Button from '../../UI/Button/Button';

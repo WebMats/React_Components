@@ -15,9 +15,9 @@ const formTwo = (props) => {
 				<div className={Css.Inputs}>
 					<h2>TO:</h2>
 					<label htmlFor="fullname">Recipient's Full Name</label>
-					<input type="text" name="fullname"/>
+					<input type="text" name="recfullname"/>
 					<label htmlFor="email">Recipient's Email</label>
-					<input type="text" name="email" />
+					<input type="recemail" name="email" />
 				<div className={Css.DeliveryDate}>
 					<label htmlFor="deliverydate">SELECT A DELIVERY DATE</label>
 					<CalendarInput 
