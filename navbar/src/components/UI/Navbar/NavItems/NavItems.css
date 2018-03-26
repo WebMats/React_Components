@@ -56,6 +56,14 @@
 }
 
 
+@media (max-width:918px) and (min-width: 771px) {
+	.NavItems {
+		font-size: 13px;
+		line-height: 4;
+	}
+}
+
+
 @media (max-width: 770px) {
 	.NavItems {
 		display: block;

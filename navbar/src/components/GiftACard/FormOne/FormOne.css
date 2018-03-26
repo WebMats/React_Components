@@ -1,31 +1,41 @@
 .FullWrapper {
 	width: 800px;
 	margin: 0 auto;
+	height: 600px;
+}
+.FullWrapper section:first-child p {
+	line-height: 1.5;
 }
 
 
-section > h1 {
+
+.FullWrapper section > h1 {
 	font-size: 28px;
-	 : 900;
 	margin-bottom: 10px;
 }
-section:not(.SuggestionWrapper) > p {
-	font-size: 18px;
+.FullWrapper section:not(.SuggestionWrapper) > p {
+	font-size: 16px;
 	margin-bottom: 20px;
 }
 
-
-form > h1 {
+/*the number 1*/
+.FullWrapper form > h1 {
 	font-size: 130px;
-	 : 900;
 }
+/**/
 
-
+/*input section*/
 .AmountWrapper {
 	position: relative;
 	bottom: 135px;
-	left: 55px;
+	margin-top: 20px;
+	left: 65px;
 }
+.AmountWrapper > p { 
+	font-size: 25px;
+	position: relative;
+	bottom: 15px;
+	}
 .AmountInput {
 	display: flex;
 	margin: 10px 0px;
@@ -35,16 +45,28 @@ form > h1 {
 	border-radius: 4px;
 	height: 40px;
 	width: 80px;
-	margin: 0px 10px;
+	padding: 0px 10px;
+	font-size: 15px;
+	margin: 0px 10px 20px 5px;	
 }
-
-
-
-
-
-
-
-
+.FullWrapper span {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.Selector {
+	height: 40px;
+	width: 200px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: .5px solid #ccc;
+	background-color: #fff;
+}
+/*input style end*/
 
 
 .SuggestionWrapper {
@@ -53,8 +75,8 @@ form > h1 {
 	height: 260px;
 	width: 475px;
 	position: relative;
-	bottom: 220px;
-	left: 250px;
+	bottom: 300px;
+	left: 290px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -65,11 +87,15 @@ form > h1 {
 	justify-content: space-between;
 }
 .SuggestionWrapper p { 
-	font-size: 19px;
-	
+	font-size: 15px;
+	line-height: 1.8;
 }
-.SuggestionWrapper p {
-	 
+.Par::after {
+	content: " Learn More.";
+	color:rgb(83, 166, 166);
+}
+.SuggestionWrapper h3 {
+	font-size: 15px;	 
 }
 
 

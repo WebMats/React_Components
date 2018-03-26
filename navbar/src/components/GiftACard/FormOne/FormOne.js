@@ -18,20 +18,20 @@ return (
 			<form>
 				<h1>1</h1>
 				<div className={Css.AmountWrapper}>
-					<h2>How Much Would You Like To Give?</h2>
-				
+					<p>How Much Would You Like To Give?</p>
 						<label htmlFor="amount">Enter an Amount:</label>
 						<div className={Css.AmountInput}>
-						<h2>$</h2>
-						<input name="amount" type="text"/>
-						<h2>.00</h2>
-					</div>
+						<span>$</span>
+						<input type="number" inputMode="Decimal" maxLength="5" min="0" name="amount"/>
+						<span>.00</span>
+				</div>
 
 					<div className={Css.SelectorWrapper}>
 						<label htmlFor="chosenamount">
 							<strong>OR </strong>choose an amount:
 						</label>
-						<select name="chosenamount" id="amountselector">
+						</div>
+						<select className={Css.Selector} name="chosenamount" id="amountselector">
 							<option>Select</option>
 							<option>$79</option>
 							<option>$149</option>
@@ -41,14 +41,12 @@ return (
 							<option>$2000</option>
 							<option>$3000</option>
 						</select>
-					</div>
-
 				</div>
 			</form>
 		</section>
 		<section className={Css.SuggestionWrapper}>
 			<h3>SUGGESTED GIFT AMOUNTS</h3>
-			<p>&#8226; Our design packages are $79 Light, $149 Classic and $249 Signature. Learn More.</p>
+			<p className={Css.Par}>&#8226; Our design packages are $79 Light, $149 Classic and $249 Signature.</p>
 			<p>&#8226; Gift cards can be applied towards the purchase of design packages, furniture and décor.</p>
 			<p>&#8226; Want to gift interior design + a room full of furniture? We'd suggest giving $1000 for a design refresh and $5000+ for a full room overhaul.</p>
 		</section>

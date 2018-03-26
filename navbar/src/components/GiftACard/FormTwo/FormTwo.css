@@ -1,0 +1,45 @@
+.FullWrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.Inputs {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column;
+	position: relative;
+	bottom: 130px;
+	left: 100px;
+}
+
+.Inputs input {
+	border: .5px solid #ccc;
+	border-radius: 4px;
+	height: 40px;
+	width: 85%;
+	padding: 0px 10px;
+	font-size: 15px;
+	margin: 10px 10px 20px 5px;	
+}
+.Inputs input:last-child {
+	width:200px;
+}
+
+.Inputs h2 {
+	margin-bottom: 20px;
+}
+.Inputs label::after {
+	content: " *";
+	color: red;
+	font-size: 8px;
+	position: relative;
+	bottom:7px;
+}
+.DeliveryDate {
+	position: relative;
+	top: 0;
+	left: 0;
+}
