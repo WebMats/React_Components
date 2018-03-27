@@ -1,0 +1,29 @@
+.FullWrapper {
+	position: relative;
+	top:75px;
+	width: 95%;
+	margin: 0 auto;
+}
+.Title {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.Title h3 {
+	display: none;
+}
+
+@media (min-width: 569px) {
+	.FullWrapper {
+		width: 90%;
+	}
+	.Title h3 {
+		display: block;
+	}
+}
+
+
+
+
+

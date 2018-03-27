@@ -1,0 +1,124 @@
+.GridWrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(1fr, 6);
+	grid-row-gap: 30px;
+	width: 100%;
+	height: 2000px;
+	max-width: 1800px;
+	margin:0 auto;
+	position: relative;
+}
+.GridWrapper > div {
+	width: 100%;
+	height: 210px;
+	display: flex;
+	-ms-align-items: center;
+	flex-flow: column;
+	align-items: center;
+}
+
+.Cali {
+	background-image: url('../../../assets/images/california-room.jpg');
+	background-size: cover;
+	background-position: 50% center;
+}
+.Button {
+	display: none;
+}
+
+.Trad {
+	background-image: url('../../../assets/images/traditional-bedroom.jpg');
+	background-size: cover;
+	background-position: 50% center;
+}
+
+.Small {
+	background-image: url('../../../assets/images/small-space.jpg');
+	background-size: cover;
+	background-position: 50% center;
+}
+
+.Holly {
+	background-image: url('../../../assets/images/hollywood-room.jpg');
+	background-size: cover;
+	background-position: 50% center;
+}
+
+.Couch {
+	background-image: url('../../../assets/images/couches.jpg');
+	background-size: cover;
+	background-position: 50% center;
+}
+
+.Elegant {
+	background-image: url('../../../assets/images/elegant-room.jpg');
+	background-size: cover;
+	background-position: 50% center;
+}
+
+.GridWrapper > div > h3 {
+	position: relative;
+	top: 230px;
+}
+.GridWrapper > div > h4 {
+	position: relative;
+	top: 240px;
+	color: rgb(83, 166, 166);
+}
+
+@media (min-width: 569px) {
+	.GridWrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-row-gap: 30px;
+		grid-column-gap: 30px;
+		height: 1400px;
+	}
+
+	.Cali {
+		grid-column:  1/3;
+		height: 330px !important; 
+		position: relative;
+	}
+	.Holly {
+		grid-column:  1/3;
+		height: 330px !important; 
+		position: relative;
+	}
+	.Cali:before, .Holly:before {
+		content: "";
+		height: 330px;
+		width: 350px;
+		background-color: rgba(255,255,255, 0.8);
+		position: absolute;
+		left: 0;
+	}
+	.Cali > h3, .Holly > h3 {
+		position: absolute !important;
+		left:14px;
+		top:100px !important;
+	}
+	.Cali > h4, .Holly > h4 {
+		position: absolute !important;
+		left:130px;
+		top:140px !important;
+	}	
+	.Button {
+		display: block;
+		width: 180px;
+		height: 50px;
+		position: absolute;
+		left: 90px;
+		top: 140px;
+		z-index: 10;
+	}
+	.Button button {
+		background-color: black;
+	}
+}
+
+
+
+
