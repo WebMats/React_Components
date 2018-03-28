@@ -56,6 +56,9 @@
 	background-size: cover;
 	background-position: 50% center;
 }
+.Cali > h3, .Trad > h3 {
+	text-align: center;
+}
 
 .GridWrapper > div > h3 {
 	position: relative;

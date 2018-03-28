@@ -98,6 +98,9 @@
 		grid-area: Four;
 		justify-self: start;
 	}
+	.WrapInstaText {
+		font-size: calc(10px + .5vw);
+	}
 }
 
 

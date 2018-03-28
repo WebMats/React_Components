@@ -109,6 +109,15 @@
 	}
 }
 
+@media (max-width: 491px) {
+	.TextBox {
+		width: 90%;
+	}
+	.TextBox h1 {
+		font-size: calc(18px + 1.5vw)
+	}
+}
+
 @media (max-width: 380px) {
 	.TextBox {
 		height: calc(310px - 5vw);
