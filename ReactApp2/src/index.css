@@ -1,0 +1,21 @@
+*,*:before,*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+textarea,
+button,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+	-webkit-appearance:none;
+	border: 0;
+}
+html {
+	height: 100%;
+}
