@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 
-import Carousel from '../../components/Carousel/Carousel';
 import Aux from '../../hoc/Aux/Aux';
+import Carousel from '../../components/Carousel/Carousel';
+import Navbar from '../../components/UI/Navbar/Navbar';
+import MVdiv from '../../components/MVdiv/MVdiv';
+import Panels from '../../components/Panels/Panels';
+import Footer from '../../components/Footer/Footer';
 
 import Css from './HomePage.css';
 
@@ -38,6 +42,12 @@ componentDidMount() {
 			<div className={Css.ImgWrapper}>
 				<Carousel num={this.state.slideNum} items={Items} />
 			</div>
+			<div className={Css.NavbarWrapper}>
+				<Navbar />
+			</div>
+			<MVdiv />
+			<Panels />
+			<Footer />
 		</Aux>
 			);
 	}

@@ -1,7 +1,11 @@
 import React from 'react';
 
+import Aux from '../../hoc/Aux/Aux';
+
 import Css from './Carousel.css';
 
+import Logo from '../../assets/images/mv_logo.png';
+import Arrow from '../../assets/images/arrow.png';
 
 
 
@@ -17,8 +21,15 @@ let Carousel = null;
 							));
 
 
-	return Carousel
-	
-	};
+	return (
+			<Aux>
+				{Carousel}
+				<div className={Css.ImgWrapper}>
+					<img src={Logo} alt=""/>
+					<img src={Arrow} alt=""/>
+				</div>
+			</Aux>	
+	);
+};
 
 export default Carousel ;

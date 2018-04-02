@@ -33,7 +33,7 @@ if (props.SliderStatus === 1) {
 				<img src={ImgOne} alt="" />
 				<div className={Css.TextBox}>
 					<h3>A COZY BOHO BEDROOM</h3>
-					<p>Soothing tones and please-touch textures make for a dreamy night;s sleep.</p>
+					<p>Soothing tones and please-touch textures make for a dreamy nights sleep.</p>
 					<div className={Css.SmallImgOne}></div>
 				</div>
 			</div>

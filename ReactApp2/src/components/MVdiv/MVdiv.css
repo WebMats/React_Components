@@ -1,0 +1,41 @@
+.Img {
+	background-image: url('../../assets/images/Mano.png');
+	height: 500px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	opacity: .05;
+}
+
+.FullWrapper {
+	position: relative;
+	top: 635px;
+	display: flex;
+	justify-content: center;
+}
+
+.TextWrapper {
+	position: absolute;
+	top:50%;
+	width: 500px;
+	text-align: center;
+}
+.TextWrapper > p  {
+	line-height: 1.4;
+	font-style: italic;
+	position: relative;
+	bottom: 40px;
+	font-size: 17px;
+	color:#3d3d3d;
+}
+.TextWrapper > h2 {
+	position: relative;
+	color:#477764;
+	bottom: 80px;
+	width:300px;
+	text-align: center;
+	left:100px;
+	font-weight: 100;
+	font-size: 25px;
+	border-bottom: 2px solid #477764;
+}

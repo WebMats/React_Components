@@ -13,3 +13,18 @@
 .Active {
 	display: block;
 }
+
+.ImgWrapper {
+	position: relative;
+	bottom: 540px;
+	display: flex;
+	flex-flow: column;
+	-ms-align-items: center;
+	align-items: center;
+	align-content: center;
+}
+.ImgWrapper img:nth-child(2) {
+	height: 30px;
+	margin-top: 60px;
+	width: 30px;
+}

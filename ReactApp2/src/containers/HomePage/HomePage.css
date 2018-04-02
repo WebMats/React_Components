@@ -1,10 +1,24 @@
 .ImgWrapper {
 	background: rgba(0,0,0, .3);
-	height: 100%;
+	height: 90%;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	/*transform: translate(-20%, 0%);*/
-/*	overflow: hidden;*/
+	overflow: hidden;
 }
+
+
+/*Start of Navbar styling*/
+.NavbarWrapper {
+	position: relative;
+	top:700px;
+	display: flex;
+}
+.NavbarWrapper > nav {
+	width: 100%;
+}
+
+
+/*End of Navbar styling*/

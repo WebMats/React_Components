@@ -1,0 +1,8 @@
+.NavItem {
+	padding: 5px 10px;
+}
+
+.NavItem > a {
+	color: #477764;
+	font-size: 16px;
+}
