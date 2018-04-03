@@ -23,16 +23,24 @@ let Items = [Item1,Item2 ,Item3 ,Item4 ,Item5 ,Item6 ,Item7 ,Item8]
 
 class HomePage extends Component {
 	state={
-		slideNum: 0
+		slideNum: 0,
+		mounted: true
 	}
 
 handleChangeSlide = () => {
+	if (this.state.mounted) {
 	this.state.slideNum >= 7 ? this.setState({slideNum: 0}) : this.setState({slideNum: ++this.state.slideNum})
 	setTimeout(this.handleChangeSlide, 5000)
+	}
 }
 
 componentDidMount() {
+	this.setState({mounted: true})
 	setTimeout(this.handleChangeSlide, 5000)
+}
+
+componentWillUnmount() {
+	this.state.mounted = false;
 }
 
 	render() {

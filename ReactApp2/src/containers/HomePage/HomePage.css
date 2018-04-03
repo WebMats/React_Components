@@ -15,6 +15,7 @@
 	position: relative;
 	top:700px;
 	display: flex;
+	z-index: 100;
 }
 .NavbarWrapper > nav {
 	width: 100%;

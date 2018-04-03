@@ -12,7 +12,7 @@ const footer = (props) => (
 			<h4>CHICAGO IL 60607</h4>
 			<h4>(312) 888-3041</h4>
 			<h4>TEAMMV@MONTEVERDECHICAGO.COM</h4>
-			<div>
+			<div className={Css.SocialLinks}>
 				<pre>FACEBOOK | TWITTER | INSTAGRAM</pre>
 			</div>
 			<small>{String.fromCharCode(169)} 2015-2016 TEXAHS LLC. ALL RIGHTS RESERVED.</small>

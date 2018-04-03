@@ -6,3 +6,7 @@
 	color: #477764;
 	font-size: 16px;
 }
+
+.NavItem a:hover {
+	cursor: pointer;
+}
