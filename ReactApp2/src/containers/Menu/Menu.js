@@ -12,19 +12,11 @@ import Css from './Menu.css';
 class Menu extends Component {
 
 
-
 	render() {
-
-
 
 		return (
 			<Aux>
-				<div className={Css.LogoWrapper}>
-					<img className={Css.Logo} src={Logo} alt="" /> 
-					<img src={MVLogo} alt=""/>
-				</div>
-				<hr />
-				<Navbar />
+				
 			</Aux>
 			);
 	}
