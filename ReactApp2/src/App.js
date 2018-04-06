@@ -1,26 +1,23 @@
-import React, {Component} from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom';
-import asyncComponent from './hoc/AsyncComponent/AsyncLoading';
+import React, { Component } from 'react';
+import {Switch, Route, Redirect} from 'react-router-dom';
 
-import HomePage from './containers/HomePage/HomePage';
+import HomePage from './Containers/HomePage/HomePage';
+import Menu from './Containers/Menu/Menu';
 
-
-const asyncMenu = asyncComponent(() => {
-	return import('./containers/Menu/Menu')
-});
+import './App.css';
 
 class App extends Component {
-	render() {
-	return (
-	<div className="App">
-	 <Switch>	
-	 	<Route exact path="/" component={HomePage} />
-	 	<Route path="/menu" component={asyncMenu} />
-	 	
-	 </Switch>
-	 </div>
-	);
-	}
+  render() {
+    return (
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/menu" component={Menu} />
+          <Redirect to="/" />
+        </Switch>
+      </div>
+    );
+  }
 }
 
-export default App ;
+export default App;

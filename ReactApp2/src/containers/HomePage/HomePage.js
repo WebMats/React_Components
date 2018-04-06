@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
 import Aux from '../../hoc/Aux/Aux';
-import Carousel from '../../components/Carousel/Carousel';
-import Navbar from '../../components/UI/Navbar/Navbar';
-import MVdiv from '../../components/MVdiv/MVdiv';
-import Panels from '../../components/Panels/Panels';
-import Footer from '../../components/Footer/Footer';
+import Carousel from '../../Components/Carousel/Carousel';
+import Navbar from '../../Components/UI/Navbar/Navbar';
+import MVdiv from '../../Components/MVdiv/MVdiv';
+import Panels from '../../Components/Panels/Panels';
+import Footer from '../../Components/Footer/Footer';
 
 import Css from './HomePage.css';
 

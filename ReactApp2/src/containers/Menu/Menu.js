@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Navbar from '../../components/UI/Navbar/Navbar';
+import Navbar from '../../Components/UI/Navbar/Navbar';
 
 import Aux from '../../hoc/Aux/Aux';
 import Logo from '../../assets/images/logomark.svg';
@@ -15,9 +15,9 @@ class Menu extends Component {
 	render() {
 
 		return (
-			<Aux>
-				
-			</Aux>
+			<div>
+				<h1>Menu</h1>
+			</div>
 			);
 	}
 }
