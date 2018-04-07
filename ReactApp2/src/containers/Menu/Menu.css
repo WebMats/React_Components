@@ -1,4 +1,27 @@
 .LogoWrapper img:first-child {
-	height: 100px;
-	width: 100px;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top:-30px;
+	left: calc(35vw - 300px);
+	z-index: -10;
+	opacity: .1;
+}
+.LogoWrapper img:nth-child(2) {
+	margin-top: 40px;
+	transform: scale(.9);
+}
+.LogoWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Line {
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+	top: 33px;
+	padding: 0;
+	height: 0;
+	border: .5px solid #477764;
 }
