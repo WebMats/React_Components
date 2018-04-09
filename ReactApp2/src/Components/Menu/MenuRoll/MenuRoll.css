@@ -1,0 +1,65 @@
+.FullWrapper {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	margin-top: 50px;
+}
+.ImageWrapper {
+	width: 750px;
+	height: 350px;
+	margin: 20px 0;
+	background-size: cover;
+	background-position: center 50%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.OrnamentWrapper {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top:100px;
+	z-index: 10;
+}
+
+
+.TextWrapper * {
+	color: #FFF;
+	text-align: center;
+}
+.TextWrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, .2);
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;	
+}
+.TextWrapper h2 {
+	font-size: 30px;
+	margin: 30px 0;
+}
+
+.TextWrapper pre {
+	font-size: 15px;
+}
+
+.TextWrapper:hover {
+	background: rgba(0,0,0, .4);
+	transition: .3s;
+}
+
+@media (max-width: 790px) {
+	.ImageWrapper {
+		width: 90vw;
+	}
+	
+}

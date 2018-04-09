@@ -31,4 +31,7 @@
 	margin: 20px 0;
 }
 
-
+.FullWrapper small:last-child {
+	text-align: center;
+	width:95%;
+}

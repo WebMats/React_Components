@@ -24,7 +24,9 @@ let Carousel = null;
 	return (
 			<Aux>
 				{Carousel}
-				<div className={Css.ImgWrapper}>
+				<div 
+				className={Css.ImgWrapper}
+				style={{opacity: props.opacity}}>
 					<img src={Logo} alt=""/>
 					<img src={Arrow} alt=""/>
 				</div>

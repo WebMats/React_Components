@@ -52,6 +52,50 @@
 	clip: rect(0px,60px,200px,0px);
 }
 
+@media (max-width: 825px) and (min-width: 769px) {
+	.FullWrapper {
+		justify-content: center;
+	}
+	.Section {
+		padding: 0px 20px;
+	}
+	.Section > div p {
+		width: auto;
+	}
+}
 
+@media (max-width: 768px) {
+	.Section {
+		flex-flow: column;
+		padding: 0 20px;
+	}
+	.Section > div p {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.FullWrapper {
+		height: auto;
+	}
+	/*Order style of text and image start*/
+	.FullWrapper div:nth-child(2) div {
+		order: 2;
+	}
+	.FullWrapper div:nth-child(3) div {
+		order: 3;
+	}
+	/*Order style of text and image end*/
+	.Section > img {
+		height: 260px;
+		width: 260px;
+		margin-left: 10px;
+		padding-bottom: 10px;
+}
+}
 
+@media (max-width: 400px) {
+	.Section > img {
+		width: 70vw ;
+		margin: 0px;
+	}
+}
 

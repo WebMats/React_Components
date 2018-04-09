@@ -1,0 +1,51 @@
+.LogoWrapper img:first-child {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top:-30px;
+	left: calc(35vw - 300px);
+	z-index: -10;
+	opacity: .1;
+}
+.LogoWrapper img:nth-child(2) {
+	margin-top: 40px;
+	transform: scale(.9);
+}
+.LogoWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Line {
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+	top: 33px;
+	padding: 0;
+	height: 0;
+	border: .5px solid #477764;
+}
+
+@media (max-width: 768px) {
+	.LogoWrapper {
+		display: block;
+		width: 100%;
+	}
+	.LogoWrapper > img {
+		width: 250px;
+	}
+	.LogoWrapper img:first-child {
+		display: none;
+	}
+	.LogoWrapper img:nth-child(2) {
+		margin: 0;
+		transform: scale(.9);
+		position: relative;
+		padding: 10px;
+		left: -10px;
+	}
+	.Line {
+		top: 0px;
+		width: 100%;
+	}
+}

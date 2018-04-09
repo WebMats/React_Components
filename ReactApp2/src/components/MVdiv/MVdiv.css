@@ -39,3 +39,29 @@
 	font-size: 25px;
 	border-bottom: 2px solid #477764;
 }
+
+@media (max-width: 536px) {
+	.TextWrapper {
+		height: 80%;
+		width: 96%;
+		bottom: 0;
+		text-align: center;
+	}
+	.TextWrapper > p {
+		width: 95%;
+	}
+	.TextWrapper > h2 {
+		margin: 0;
+		padding: 0;
+		left: 0;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 325px) {
+	.TextWrapper > h2 {
+		width: 90vw;
+	}
+}
+
+
