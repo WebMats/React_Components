@@ -1,0 +1,119 @@
+.FullWrapper {
+	background-image: url('../../../assets/images/reservation-background.jpeg');
+	background-size: cover;
+	background-position: 50% center;
+	padding: 80px 0;
+	margin-top: 20px;
+	background-color: rgba(243, 236, 224, .9);
+	background-blend-mode: overlay;
+}
+
+.Grid {
+	background: #FFF;
+	padding: 50px;
+	width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: 60px 2fr 1fr;
+	grid-template-columns: repeat(2, 50%);
+	justify-items: center;
+}
+
+.Title {
+	grid-column: 1 / 3;
+	grid-row-start: 1;
+	border-bottom: 2px solid #477764;
+	color: #477764;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+.FindWrapper {
+	grid-column: 1 / 3;
+	grid-row-start: 2;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 70px;
+}
+.CardWrapper {
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+	align-self: end;
+}
+.CardWrapper img {
+	width: 95%;
+}
+.BtnWrapper {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+	text-align: center;
+	align-self: center;
+}
+
+/*Start of font fine styling*/
+.FindWrapper > h2 {
+	color: #477764;
+	border: 1.5px solid #477764;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.BtnWrapper button {
+	height: 40px;
+	background: #477764;
+	width: 90%;
+	color: #FFF;
+	font-size: 15px;
+	margin-top: 10px;
+}
+.FindWrapper p {
+	font-style: italic;
+}
+.FindWrapper hr {
+	width: 70%;
+	opacity: .3;
+	margin: 20px auto;
+}
+/*End of font fine styling*/
+
+
+@media (max-width: 1250px) and (min-width: 992px) {
+	.Grid {
+		width: 960px;
+	}
+}
+
+@media (max-width: 991px) {
+	.Grid {
+		width: 95%;
+	}
+	.Grid {
+	grid-template-rows: 60px 2fr 50vw 1fr;
+	grid-template-columns: 1fr;
+	}
+	.CardWrapper {
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.BtnWrapper {
+		grid-column: 1 / 2;
+		grid-row: 4 / 5;
+	}
+	.FindWrapper hr {
+		width: 90%;
+	}
+}
+
+@media (max-width: 425px) {
+	.Title {
+		border: none;
+		text-align: center;
+	}
+}
+
+
+
+
+
+

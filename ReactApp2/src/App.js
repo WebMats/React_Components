@@ -12,6 +12,9 @@ const asyncCareers = AsyncComponent(() => {
   return import('./Containers/Careers/Careers');
 })
 
+const asyncReservations = AsyncComponent(() => {
+  return import('./Containers/Reservations/Reservations');
+})
 
 
 class App extends Component {
@@ -22,6 +25,7 @@ class App extends Component {
           <Route exact path="/" component={HomePage} />
           <Route path="/menu" component={Menu} />
           <Route path="/careers" component={asyncCareers} />
+          <Route path="/reservations" component={asyncReservations} />
           <Redirect to="/" />
         </Switch>
       </div>
