@@ -3,6 +3,7 @@ import {Switch, Route, Redirect} from 'react-router-dom';
 import AsyncComponent from './hoc/AsyncComponent/AsyncLoading';
 
 import HomePage from './Containers/HomePage/HomePage';
+import Contact from './Containers/Contact/Contact';
 import Reservations from './Containers/Reservations/Reservations';
 import Menu from './Containers/Menu/Menu';
 
@@ -32,6 +33,7 @@ class App extends Component {
           <Route path="/reservations" component={Reservations} />
           <Route path="/recipes" component={asyncRecipes} />
           <Route path="/events" component={asyncEvents} />
+          <Route path="/contact" component={Contact} />
           <Redirect to="/" />
         </Switch>
       </div>
