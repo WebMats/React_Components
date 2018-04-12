@@ -1,0 +1,29 @@
+.FullWrapper {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.FullWrapper > h1 {
+	border-bottom: 3px solid #477764;
+	color: #477764;
+	font-size: 30px;
+}
+
+.FullWrapper > h3 {
+	background: #477764;
+	width: 90%;
+	text-align: center;
+	color: #FFF;
+	padding: 5px 0px;
+	margin: 50px 0;
+}
+
+.FullWrapper > hr {
+	width: 90%;
+	border: 3px solid #477764;
+	margin-top: 50px;
+}

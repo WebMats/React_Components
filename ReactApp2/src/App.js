@@ -3,6 +3,7 @@ import {Switch, Route, Redirect} from 'react-router-dom';
 import AsyncComponent from './hoc/AsyncComponent/AsyncLoading';
 
 import HomePage from './Containers/HomePage/HomePage';
+import Reservations from './Containers/Reservations/Reservations';
 import Menu from './Containers/Menu/Menu';
 
 import './App.css';
@@ -12,8 +13,8 @@ const asyncCareers = AsyncComponent(() => {
   return import('./Containers/Careers/Careers');
 })
 
-const asyncReservations = AsyncComponent(() => {
-  return import('./Containers/Reservations/Reservations');
+const asyncEvents = AsyncComponent(() => {
+  return import('./Containers/Events/Events');
 })
 
 const asyncRecipes = AsyncComponent(() => {
@@ -28,8 +29,9 @@ class App extends Component {
           <Route exact path="/" component={HomePage} />
           <Route path="/menu" component={Menu} />
           <Route path="/careers" component={asyncCareers} />
-          <Route path="/reservations" component={asyncReservations} />
+          <Route path="/reservations" component={Reservations} />
           <Route path="/recipes" component={asyncRecipes} />
+          <Route path="/events" component={asyncEvents} />
           <Redirect to="/" />
         </Switch>
       </div>
