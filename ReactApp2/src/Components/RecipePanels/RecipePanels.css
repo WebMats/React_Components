@@ -1,0 +1,61 @@
+.PanelWrapper {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	height: 250px;
+	width: 770px;
+	background: #FFF;
+	margin: 22px 0;
+}
+
+.PanelWrapper  > h2 {
+	color: #477764;
+	font-size: 22px;
+	font-weight: 900;
+	border-bottom: 2.5px solid #477764;
+}
+
+.PanelWrapper > button {
+	background-color: #477764;
+	height: 37px;
+	width: 150px;
+	color: #FFF;
+	font-size: 16px;
+}
+
+.PanelWrapper > p {
+	margin: 8px 0;
+	font-size: 17px;
+	font-style: italic;
+	text-align: center;
+	font-weight: 800;
+	opacity: .7;
+}
+
+.Par {
+	font-style: normal !important;
+	margin-top: 0 !important;
+}
+.Par::after {
+	content: " Bon Apetit";
+	color: #477764;
+}
+
+@media (max-width: 991px) {
+	.PanelWrapper {
+		width: 700px;
+	}
+}
+
+@media (max-width: 768px) {
+	.PanelWrapper {
+		width: 98%;
+		padding: 10px;
+	}
+	.PanelWrapper  > h2 {
+		font-size: 19px;
+		text-align: center;
+		border-bottom-width: 1.5px;
+	}
+}
