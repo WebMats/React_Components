@@ -41,10 +41,10 @@ handleScroll = (position) => {
 }
 }
 
-componentDidMount() {
-	setTimeout( this.state.mounted ? this.handleChangeSlide : null, 5000)
-	window.onscroll = () => this.handleScroll(window.pageYOffset)
-}
+// componentDidMount() {
+// 	setTimeout( this.state.mounted ? this.handleChangeSlide : null, 5000)
+// 	window.onscroll = () => this.handleScroll(window.pageYOffset)
+// }
 
 componentWillUnmount() {
 	this.state.mounted = false;
